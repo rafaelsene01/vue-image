@@ -2,11 +2,14 @@
   "name": "vue-image",
   "version": "0.0.0",
   "private": true,
+  "config": {
+    "mode": "production"
+  },
   "scripts": {
     "dev": "vite --port=8080",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
-    "build-only": "vite build",
+    "build-only": "vite build --mode $npm_config_mode",
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
