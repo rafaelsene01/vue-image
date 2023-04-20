@@ -12,6 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.2.47",
     "vuetify": "^3.1.15"
